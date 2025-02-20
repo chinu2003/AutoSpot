@@ -18,6 +18,7 @@ const PARKING_LOCATION = {
   longitude: 73.33585630398036,
 };
 
+// const ESP8266_IP = "192.168.188.215"; // Change this to your ESP8266's local IP
 const ESP8266_IP = "192.168.188.215"; // Change this to your ESP8266's local IP
 const WS_URL = `ws://${ESP8266_IP}:8080/`;
 

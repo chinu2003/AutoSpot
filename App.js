@@ -2,8 +2,9 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Map from './Components/Map';
-import ParkingSlots from './Components/ParkingSlots';
+// import ParkingSlots from './Components/ParkingSlots';
 import Book from './Components/Book';
+import Parking from './Components/Parking';
 
 const Stack = createStackNavigator();
 
@@ -19,7 +20,8 @@ export default function App() {
         }}
       >
         <Stack.Screen name="Map" component={Map} options={{ title: 'Parking Map' }} />
-        <Stack.Screen name="ParkingSlots" component={ParkingSlots} options={{ title: 'Select a Slot' }} />
+        {/* <Stack.Screen name="ParkingSlots" component={ParkingSlots} options={{ title: 'Select a Slot' }} /> */}
+        <Stack.Screen name="Parking" component={Parking } options={{ title: 'Select a Slot' }} />
         <Stack.Screen name="Book" component={Book} options={{ title: 'Booking Details' }} />
       </Stack.Navigator>
     </NavigationContainer>

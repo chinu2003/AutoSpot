@@ -94,7 +94,8 @@ const Map = () => {
           coordinate={{ latitude: loc.latitude, longitude: loc.longitude }}
           title="Parking Spot"
           description="Click to view slots"
-          onPress={() => navigation.navigate('ParkingSlots')}
+          // onPress={() => navigation.navigate('ParkingSlots')}
+          onPress={() => navigation.navigate('Parking')}
         >
           <Image source={require('../assets/location-icon.png')} style={{ width: 40, height: 40 }} />
         </Marker>
